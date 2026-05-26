@@ -1,8 +1,9 @@
 class Task:
-    def __init__(self, title, status="ToDo"):
+    def __init__(self, title, status="ToDo", priority="Medium"):
         self.title = title
         self.completed = False
         self.status = status
+        self.priority = priority
     def mark_completed(self):
         self.completed = True
         self.status = "Done"
